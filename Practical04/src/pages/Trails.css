@@ -1,0 +1,89 @@
+.trails__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.trails__header h1 {
+  font-size: 28px;
+}
+
+.trails__header p {
+  color: var(--ink-soft);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.trails__search {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+  padding: 10px 14px;
+  font-size: 14px;
+  min-width: 220px;
+}
+
+.trails__filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.trails__pill {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--ink-soft);
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.trails__pill:hover {
+  border-color: var(--moss);
+  color: var(--ink);
+}
+
+.trails__pill.is-active {
+  background: var(--moss);
+  border-color: var(--moss);
+  color: #fff;
+}
+
+.trails__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.trails__empty {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--ink-soft);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-m);
+}
+
+.trails__empty span {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 860px) {
+  .trails__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .trails__grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,23 @@
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--color-ink-soft);
+}
+
+.empty-state__icon {
+  font-size: 36px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.empty-state h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  font-size: 14px;
+  max-width: 36ch;
+  margin: 0 auto;
+}

@@ -1,0 +1,37 @@
+.about {
+  max-width: 60ch;
+}
+
+.about h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+.about code {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 13px;
+  color: var(--ink);
+}
+
+.about__link {
+  display: inline-flex;
+  margin-top: 8px;
+  color: var(--moss-dark);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.about__link:hover {
+  text-decoration: underline;
+}

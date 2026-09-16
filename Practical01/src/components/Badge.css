@@ -1,0 +1,30 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.badge--neutral {
+  background: var(--color-bg);
+  color: var(--color-ink-soft);
+  border: 1px solid var(--color-border);
+}
+
+.badge--accent {
+  background: var(--color-accent-soft);
+  color: var(--color-accent-dark);
+}
+
+.badge--warm {
+  background: var(--color-yolk-soft);
+  color: #8a5f16;
+}
+
+.badge--spicy {
+  background: var(--color-brick-soft);
+  color: var(--color-brick);
+}

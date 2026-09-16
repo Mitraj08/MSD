@@ -1,0 +1,30 @@
+.filter-bar {
+  display: inline-flex;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-s);
+  padding: 4px;
+  gap: 2px;
+  margin-bottom: 20px;
+}
+
+.filter-bar__tab {
+  background: transparent;
+  border: none;
+  color: var(--text-soft);
+  padding: 7px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.filter-bar__tab:hover {
+  color: var(--text);
+}
+
+.filter-bar__tab.is-active {
+  background: var(--accent-soft);
+  color: var(--accent);
+}

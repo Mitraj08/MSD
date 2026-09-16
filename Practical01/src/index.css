@@ -1,0 +1,168 @@
+:root {
+  --color-bg: #f6f3ec;
+  --color-surface: #ffffff;
+  --color-ink: #2b2620;
+  --color-ink-soft: #6b6357;
+  --color-border: #e4dcc9;
+  --color-accent: #4a5d3a;
+  --color-accent-dark: #384828;
+  --color-accent-soft: #dee6d3;
+  --color-yolk: #e3a73e;
+  --color-yolk-soft: #f7e6c4;
+  --color-brick: #b5533c;
+  --color-brick-soft: #f1ded8;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Work Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --radius-s: 6px;
+  --radius-m: 12px;
+  --radius-l: 20px;
+
+  --shadow-card: 0 1px 2px rgba(43, 38, 32, 0.06), 0 8px 24px rgba(43, 38, 32, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  margin: 0;
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.app-shell {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+
+/* ---------- Header ---------- */
+
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.masthead-title {
+  font-size: 44px;
+  letter-spacing: -0.01em;
+}
+
+.masthead-title em {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+.masthead-sub {
+  margin-top: 8px;
+  color: var(--color-ink-soft);
+  font-size: 15px;
+  max-width: 42ch;
+}
+
+.masthead-count {
+  text-align: right;
+  color: var(--color-ink-soft);
+  font-size: 14px;
+}
+
+.masthead-count strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 32px;
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+/* ---------- Controls row ---------- */
+
+.controls-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* ---------- Grid ---------- */
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 860px) {
+  .recipe-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .recipe-grid {
+    grid-template-columns: 1fr;
+  }
+  .masthead {
+    align-items: flex-start;
+  }
+  .masthead-count {
+    text-align: left;
+  }
+}

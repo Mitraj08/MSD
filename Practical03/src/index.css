@@ -1,0 +1,130 @@
+:root {
+  --paper: #fbfaf7;
+  --paper-line: #e2ddd0;
+  --card: #ffffff;
+  --ink: #232323;
+  --ink-soft: #6f6a5e;
+  --navy: #2f3a5e;
+  --navy-dark: #232c47;
+  --navy-soft: #e6e9f2;
+  --red: #b23a2e;
+  --red-soft: #f5e2df;
+  --green: #3e7c59;
+  --green-soft: #e3ede6;
+
+  --font-display: "Libre Baskerville", Georgia, serif;
+  --font-body: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --radius-s: 6px;
+  --radius-m: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  margin: 0;
+  font-weight: 700;
+  color: var(--navy-dark);
+}
+
+p {
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--navy);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.app-shell {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 24px;
+  margin-bottom: 32px;
+  border-bottom: 2px solid var(--navy-dark);
+}
+
+.app-header__title {
+  font-size: 32px;
+}
+
+.app-header__sub {
+  margin-top: 6px;
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+.app-header__count {
+  font-size: 13px;
+  color: var(--ink-soft);
+  text-align: right;
+}
+
+.app-header__count strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 26px;
+  color: var(--navy-dark);
+}
+
+.app-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .app-layout {
+    grid-template-columns: 1fr;
+  }
+  .app-header__count {
+    text-align: left;
+  }
+}

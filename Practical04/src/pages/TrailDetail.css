@@ -1,0 +1,100 @@
+.trail-detail {
+  max-width: 640px;
+}
+
+.trail-detail__back {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--ink-soft);
+  border-radius: var(--radius-s);
+  padding: 8px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.trail-detail__back:hover {
+  border-color: var(--moss);
+  color: var(--moss-dark);
+}
+
+.trail-detail__icon {
+  font-size: 40px;
+  margin-bottom: 6px;
+}
+
+.trail-detail h1 {
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+
+.trail-detail__region {
+  color: var(--ink-soft);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.trail-detail__meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.trail-detail__badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 12px;
+  border-radius: 100px;
+}
+
+.trail-detail__badge--moss {
+  background: var(--moss-soft);
+  color: var(--moss-dark);
+}
+
+.trail-detail__badge--amber {
+  background: var(--amber-soft);
+  color: #8a5a1e;
+}
+
+.trail-detail__badge--clay {
+  background: var(--clay-soft);
+  color: var(--clay);
+}
+
+.trail-detail__description {
+  font-size: 15px;
+  color: var(--ink);
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.trail-detail h2 {
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+.trail-detail__highlights {
+  padding-left: 20px;
+  margin: 0 0 32px;
+  color: var(--ink-soft);
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.trail-detail__all-link {
+  display: inline-flex;
+  color: var(--moss-dark);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.trail-detail__all-link:hover {
+  text-decoration: underline;
+}

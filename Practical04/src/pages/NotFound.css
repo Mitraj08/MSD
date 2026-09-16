@@ -1,0 +1,36 @@
+.not-found {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.not-found__icon {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.not-found h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.not-found p {
+  color: var(--ink-soft);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.not-found__link {
+  display: inline-flex;
+  background: var(--moss);
+  color: #fff;
+  text-decoration: none;
+  padding: 11px 22px;
+  border-radius: var(--radius-s);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.not-found__link:hover {
+  background: var(--moss-dark);
+}
